@@ -1,0 +1,40 @@
+# ==============================
+# Node.js / backend-nodejs
+# ==============================
+
+# Node modules
+backend-nodejs/node_modules/
+
+# Logs
+backend-nodejs/*.log
+backend-nodejs/logs/
+backend-nodejs/npm-debug.log*
+
+# Environment files
+backend-nodejs/.env
+
+# Build output
+backend-nodejs/dist/
+backend-nodejs/build/
+
+# Optional OS files
+backend-nodejs/.DS_Store
+backend-nodejs/Thumbs.db
+
+# ==============================
+# Angular / frontend-angular
+# ==============================
+
+# Node modules
+frontend-angular/node_modules/
+
+# Angular build output
+frontend-angular/dist/
+frontend-angular/out-tsc/
+
+# Environment files
+frontend-angular/src/environments/*.ts
+
+# IDE/Editor files
+frontend-angular/.idea/
+frontend-an

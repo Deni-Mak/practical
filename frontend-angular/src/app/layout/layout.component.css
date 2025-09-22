@@ -1,0 +1,105 @@
+/* Container */
+.dashboard-container {
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Sidebar */
+.dashboard-sidenav {
+  width: 220px;
+  background-color: #1e1e2f;
+  color: #fff;
+}
+
+.sidenav-header {
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.mat-list-item {
+  color: #fff;
+  font-weight: 500;
+}
+
+.mat-list-item mat-icon {
+  margin-right: 12px;
+}
+
+/* Toolbar */
+.dashboard-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 64px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+    background-color: #1e1e2f6e;
+  }
+  
+  .toolbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Push user info to right */
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* User section */
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-name {
+    font-weight: 500;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  /* Icon buttons */
+  .user-info button mat-icon {
+    color: #fff;
+  }
+  
+
+/* Main content */
+.dashboard-content {
+  padding: 20px;
+}
+
+/* Cards layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card */
+.dashboard-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card mat-card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.dashboard-card mat-card-content p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
