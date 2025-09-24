@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserService } from '../../services/user.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 import { Store } from '@ngrx/store';
 import * as UserActions from '../../../store/user.actions';
@@ -18,7 +20,8 @@ export class UserCreateComponent {
     private store: Store,
     private fb: FormBuilder,
     private userService: UserService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private router: Router,
   ) {
     this.userForm = this.fb.group({
       name: ['', Validators.required],
@@ -60,6 +63,7 @@ export class UserCreateComponent {
           email: '',
           password: ''
         });
+        this.router.navigate(['/user']);
       },
       error: (err) => {
         this.showError(err);
